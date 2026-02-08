@@ -1,4 +1,4 @@
 # Resilix automated remediation
-# Incident: INC-3428b449
+# Incident: INC-c9cb0d51
 # Action: fix_code
-# Summary: A recent configuration update to 'infra/dns/coredns-config.yaml' introduced an excessive volume of DNS target updates, causing a propagation backlog that overwhelmed the resolver's health check subsystem.
+# Summary: A recent configuration update to 'infra/dns/coredns-config.yaml' introduced a propagation bottleneck, causing a massive backlog in the health check queue and resulting in flapping target states.
