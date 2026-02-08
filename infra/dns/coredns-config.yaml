@@ -1,4 +1,4 @@
 # Resilix automated remediation
-# Incident: INC-3428b449
+# Incident: INC-12348d76
 # Action: fix_code
-# Summary: A recent configuration update to 'infra/dns/coredns-config.yaml' introduced an excessive volume of DNS target updates, causing a propagation backlog that overwhelmed the resolver's health check subsystem.
+# Summary: A recent configuration change to the CoreDNS setup in 'infra/dns/coredns-config.yaml' introduced a performance regression that caused a massive propagation backlog, leading to DNS target health flapping.
