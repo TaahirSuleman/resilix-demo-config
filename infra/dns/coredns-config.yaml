@@ -11,10 +11,10 @@ data:
            pods insecure
            fallthrough in-addr.arpa ip6.arpa
         }
-        forward . 10.0.0.1:53  # Single resolver - no failover!
+        forward . 1.1.1.1 8.8.8.8 9.9.9.9
         cache 30
         loop
         reload
         loadbalance
     }
-  failover_mode: "DISABLED_MANUAL"  # Failover disabled!
+  failover_mode: "AUTO"
