@@ -1,0 +1,4 @@
+# Resilix automated remediation
+# Incident: INC-dc991ee8
+# Action: fix_code
+# Summary: High propagation backlog in the DNS health check subsystem leading to delayed state updates and flapping.
