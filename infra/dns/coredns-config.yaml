@@ -2,3 +2,5 @@
 # Incident: INC-6d2d9054
 # Action: config_change
 # Summary: A configuration change in 'infra/dns/coredns-config.yaml' introduced an excessive number of targets or high update frequency, leading to a DNS propagation backlog and flapping target health states.
+        forward . 1.1.1.1 8.8.8.8 9.9.9.9
+  failover_mode: "AUTO"
