@@ -17,13 +17,13 @@ data:
            fallthrough in-addr.arpa ip6.arpa
            ttl 0
         }
-        forward . 10.0.0.1:53
+        forward . 1.1.1.1 8.8.8.8 9.9.9.9
         cache 30
         max_concurrent 1000
         loop
         reload
         loadbalance
     }
-  failover_mode: "DISABLED_MANUAL"  # Manual failover mode suppresses automatic recovery.
+  failover_mode: "AUTO"
   resolver_policy: "single_region_primary"
   outage_guardrail: "disabled"
