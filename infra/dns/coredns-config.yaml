@@ -17,13 +17,13 @@ data:
            fallthrough in-addr.arpa ip6.arpa
            ttl 0
         }
-        forward . 1.1.1.1 8.8.8.8 9.9.9.9
+        forward . 10.0.0.1:53
         cache 30
         max_concurrent 1000
         loop
         reload
         loadbalance
     }
-  failover_mode: "AUTO"
+  failover_mode: "DISABLED_MANUAL" 
   resolver_policy: "single_region_primary"
   outage_guardrail: "disabled"
